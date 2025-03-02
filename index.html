@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxed by Kim | Mystery Box Experience</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f8f1ff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #9a48d0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #9a48d0;
+        }
+        .hero {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #9a48d0;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Boxed by Kim</h1>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="#boxes">Mystery Boxes</a> |
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
+    <section class="hero">
+        <div class="container">
+            <h2>Discover the Joy of Surprise</h2>
+            <p>Experience the thrill of opening a mystery box curated specifically for you, with a retail value that surpasses its cost.</p>
+            <a href="#boxes" class="cta-button">Explore Our Boxes</a>
+        </div>
+    </section>
+
+    <section id="boxes" class="container">
+        <h2>Our Mystery Boxes</h2>
+        <div class="boxes">
+            <div class="box">
+                <h3>For Women</h3>
+                <p>A selection of beauty, fashion, and lifestyle items that every woman will love.</p>
+                <p><strong>Retail Value:</strong> $100+</p>
+                <p><strong>Your Price:</strong> $59.99</p>
+                <a href="#contact" class="cta-button">Order Now</a>
+            </div>
+            <div class="box">
+                <h3>For Men</h3>
+                <p>Curated items including gadgets, grooming products, and lifestyle accessories.</p>
+                <p><strong>Retail Value:</strong> $100+</p>
+                <p><strong>Your Price:</strong> $59.99</p>
+                <a href="#contact" class="cta-button">Order Now</a>
+            </div>
+            <div class="box">
+                <h3>For Children</h3>
+                <p>Age-appropriate toys, books, and fun surprises for the little ones.</p>
+                <p><strong>Retail Value:</strong> $80+</p>
+                <p><strong>Your Price:</strong> $49.99</p>
+                <a href="#contact" class="cta-button">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Ready to Order?</h2>
+        <p>During our initial launch phase, we're handling orders manually to ensure the best customer experience. Fill out the form below to place your order:</p>
+        <form id="orderForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="boxType">Box Type:</label><br>
+            <select id="boxType" name="boxType" required>
+                <option value="">Select a box</option>
+                <option value="women">Women's Box - $59.99</option>
+                <option value="men">Men's Box - $59.99</option>
+                <option value="children">Children's Box - $49.99</option>
+            </select><br><br>
+            
+            <label for="address">Shipping Address:</label><br>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+            
+            <p>After submitting, we'll contact you via email with payment instructions and shipping details.</p>
+            
+            <button type="submit" class="cta-button">Submit Order Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Boxed by Kim. All rights reserved.</p>
+            <p>Contact: info@boxedbykim.com</p>
+        </div>
+    </footer>
+</body>
+</html>
